@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena Survivor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <div id="start-overlay" class="overlay">
+    <h1>ARENA SURVIVOR</h1>
+    <p>WASD / Arrows to move &middot; Space to dash &middot; Auto-shoot</p>
+    <button id="start-btn">START</button>
+  </div>
+
+  <div id="upgrade-overlay" class="overlay hidden">
+    <h2>LEVEL UP</h2>
+    <div id="cards"></div>
+  </div>
+
+  <div id="gameover-overlay" class="overlay hidden">
+    <h1>GAME OVER</h1>
+    <p id="final-score"></p>
+    <button id="restart-btn">RESTART (R)</button>
+  </div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
